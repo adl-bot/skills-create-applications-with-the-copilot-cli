@@ -1,4 +1,4 @@
-const { calculate } = require('../calculator');
+const { calculate, modulo, power, squareRoot } = require('../calculator');
 
 describe('Calculator basic operations', () => {
   test('adds 2 + 3 to equal 5', () => {

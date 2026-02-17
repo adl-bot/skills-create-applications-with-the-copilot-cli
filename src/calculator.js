@@ -76,4 +76,21 @@ if (require.main === module) {
   prompt();
 }
 
-module.exports = { calculate };
+// Returns the remainder of a divided by b
+function modulo(a, b) {
+  if (b === 0) throw new Error('Division by zero is not allowed.');
+  return a % b;
+}
+
+// Returns base raised to the exponent
+function power(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
+// Returns the square root of n, throws error for negative numbers
+function squareRoot(n) {
+  if (n < 0) throw new Error('Cannot take square root of a negative number.');
+  return Math.sqrt(n);
+}
+
+module.exports = { calculate, modulo, power, squareRoot };
