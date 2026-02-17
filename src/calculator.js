@@ -14,6 +14,7 @@
 
 const readline = require('readline');
 
+// Exported for testing
 function calculate(a, b, op) {
   switch (op) {
     case '+':
@@ -74,3 +75,5 @@ function prompt() {
 if (require.main === module) {
   prompt();
 }
+
+module.exports = { calculate };
